@@ -4,6 +4,7 @@ from download import download
 from login import login
 from logout import logout
 from makedir import mkdir
+from makedir import getName
 
 
 class VirtualCloudShell (cmd.Cmd):
@@ -36,6 +37,6 @@ class VirtualCloudShell (cmd.Cmd):
         pass
     def do_mkdir(self, *args):
         'Create a folder'
-        mkdir()
+        mkdir(getName())
         pass
 
